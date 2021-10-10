@@ -1,0 +1,38 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<table border='1px solid' width='300px' height=300px'>");
+        for(var row=1; row<9 ;row++){
+    document.write("<tr>");
+        for(var col=1; col<9 ;col++){
+            if (row%2!=0 && col%2 == 0){
+
+    
+                document.write("<td ></td>");
+            }    
+     else if (row%2 == 0 && col%2!=0)
+        {
+            document.writeln("<td style='background-color:red';></td>");
+        }
+   else
+         {
+             document.write("<td style='background-color:black;'></td>");
+
+         }
+        }
+    document.write("</tr>");
+}
+
+document.write("</table>");     
+    
+    
+    </script> 
+</body>
+</html>
